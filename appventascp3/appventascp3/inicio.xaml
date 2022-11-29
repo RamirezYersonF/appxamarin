@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.inicio" Background="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
+            <Image Source="icono_appventa.png" WidthRequest="200"></Image>
+            <Label Text="Appventas" FontAttributes="Bold" TextColor="#876445" FontSize="40" HorizontalTextAlignment="Center"></Label>
+            <Label Text="How do you want to enter?" FontAttributes="Bold" TextColor="#CA965C" FontSize="30"></Label>
+            <Button x:Name="registro" Clicked="registro_Clicked"  Text="Sign in" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8"   HeightRequest="60" ></Button>
+            <Button x:Name="iniciarsesion" Clicked="iniciarsesion_Clicked" Text="Log in" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8"   HeightRequest="60" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

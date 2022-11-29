@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.metodopago" BackgroundColor="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="icono_appventa.png" WidthRequest="200"></Image>
+            <Label Text="Metodo de pago"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"    
+                CharacterSpacing="1"
+                FontSize="40" FontAttributes="Bold"
+                TextColor="#876445" 
+                 Padding="0,40"
+                />
+            <StackLayout Background="white" VerticalOptions="Center" Padding="20,5" Orientation="Horizontal" >
+                <Entry x:Name="Banco" TextColor="black" Placeholder="Nombre Banco" PlaceholderColor="#CA965C" FontSize="20" ></Entry>
+            </StackLayout>
+            <StackLayout Background="white" VerticalOptions="Center" Padding="20,5" Orientation="Horizontal" >
+                <Entry x:Name="numerocuentas"  TextColor="black" Placeholder="Numero cuenta"  PlaceholderColor="#CA965C" FontSize="20"></Entry>
+            </StackLayout>
+            <Button x:Name="detallecompra" Clicked="detallescompra_Clicked" Text="Continuar" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8" Margin="0,20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.registro" Background="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="Center" Spacing="10" WidthRequest="350" Padding="0,10">
+            <Image Source="icono_appventa.png" WidthRequest="200"></Image>
+            <Label Text="Appventas" FontAttributes="Bold" TextColor="#876445" FontSize="40" HorizontalTextAlignment="Center"></Label>
+            <StackLayout Background="#ffff" VerticalOptions="FillAndExpand" Padding="20" Spacing="11">
+                <Label Text="Sign In"  FontAttributes="Bold" TextColor="#876445" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                <Entry x:Name="nombre" Placeholder="Enter Your Names" TextColor="black" PlaceholderColor="#CA965C" FontSize="20" ></Entry>
+                <Entry x:Name="apellido" Placeholder="Enter Your Last Names" TextColor="black" PlaceholderColor="#CA965C" FontSize="20"></Entry>
+                <Entry x:Name="correos" Placeholder="Enter Your Email" TextColor="black" PlaceholderColor="#CA965C" FontSize="20"></Entry>
+                <Entry x:Name="contraseñas" IsPassword="True" TextColor="black" Placeholder="Enter Your password" PlaceholderColor="#CA965C" FontSize="20"></Entry>
+                <Button x:Name="login" Clicked="login_Clicked_1"  Text="Create Account"   TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8" ></Button>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

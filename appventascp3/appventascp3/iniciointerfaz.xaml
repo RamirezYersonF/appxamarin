@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.iniciointerfaz"  BackgroundColor="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="End" Spacing="250">
+            <StackLayout VerticalOptions="Start">
+                <Image Source="icono_appventa.png" WidthRequest="200" ></Image>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="© Appventas 2022" FontSize="30" FontAttributes="Bold" TextColor="#876445" HorizontalTextAlignment="Center" Background="#EEC373" Padding="20"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

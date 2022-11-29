@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appventascp3.productosapp" Background="#FDE49C">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="Center" Spacing="40" WidthRequest="350" Padding="0,10">
+            <Image Source="icono_appventa.png" WidthRequest="200"></Image>
+            <Label Text="Appventas" FontAttributes="Bold" TextColor="#876445" FontSize="40" HorizontalTextAlignment="Center"></Label>
+            <StackLayout Background="#ffff" VerticalOptions="FillAndExpand" Padding="20" Spacing="25">
+                <Label x:Name="nombreproducto" Text="Coca Cola"  FontAttributes="Bold" TextColor="#876445" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                <Image Source="coca.png" WidthRequest="150"></Image>
+                <Label x:Name="precio" Text="5000" FontAttributes="Bold" TextColor="#876445" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                <Button x:Name="dineropagos" Clicked="dineropagos_Clicked"  Text="agregar" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8" ></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
