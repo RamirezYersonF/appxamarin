@@ -25,7 +25,7 @@ namespace appventascp3
 
                 WSClient client = new WSClient();
 
-                var result = await client.Get<Boolean>("https://192.168.52.246/" +
+                var result = await client.Get<Boolean>("https://192.168.105.246/" +
                     "api/Banco?numerocuenta=" + numerocuenta + "&nombretarjeta=" + nombretarjeta);
 
                 if (result)

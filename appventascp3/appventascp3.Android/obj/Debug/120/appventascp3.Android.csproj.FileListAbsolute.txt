@@ -662,3 +662,8 @@ C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\D
 C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
 C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\coca.jpg
+C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\pepsi.png
+C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\colombiana.png
+C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\fanta.png
+C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\sprite.jfif
+C:\Users\yfrg-\source\repos\appventascp3\appventascp3\appventascp3.Android\obj\Debug\120\res\drawable\pony.png

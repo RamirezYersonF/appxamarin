@@ -3,16 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="appventascp3.productosapp" Background="#FDE49C">
     <ContentPage.Content>
-        <StackLayout  HorizontalOptions="Center" Spacing="40" WidthRequest="350" Padding="0,10">
+        <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" Spacing="5" WidthRequest="350" Padding="0,10">
             <Image Source="icono_appventa.png" WidthRequest="200"></Image>
             <Label Text="Appventas" FontAttributes="Bold" TextColor="#876445" FontSize="40" HorizontalTextAlignment="Center"></Label>
-            <StackLayout Background="#ffff" VerticalOptions="FillAndExpand" Padding="20" Spacing="25">
-                <Label x:Name="nombreproducto" Text="Coca Cola"  FontAttributes="Bold" TextColor="#876445" FontSize="30" HorizontalTextAlignment="Center"></Label>
-                <Image Source="coca.png" WidthRequest="150"></Image>
-                <Label x:Name="precio" Text="5000" FontAttributes="Bold" TextColor="#876445" FontSize="30" HorizontalTextAlignment="Center"></Label>
-                <Button x:Name="dineropagos" Clicked="dineropagos_Clicked"  Text="agregar" TextColor="White" FontAttributes="Bold" FontSize="20" Background="#CA965C" CornerRadius="8" ></Button>
-            </StackLayout>
-
+            <FlexLayout Background="#ffff" VerticalOptions="FillAndExpand" Padding="15">
+                <StackLayout Padding="35" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label x:Name="nombreproducto2" Text="Pepsi"  FontAttributes="Bold" TextColor="#876445" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                        <Image Source="pepsi.png" WidthRequest="80"></Image>
+                        <Label x:Name="precio2" Text="3800" FontAttributes="Bold" TextColor="#876445" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                        <Button x:Name="dineropagos2" Clicked="dineropagos_Clicked2"  Text="add" TextColor="White" FontAttributes="Bold" FontSize="12" Background="#CA965C" CornerRadius="8" ></Button>
+                    </StackLayout>
+                <StackLayout Padding="35" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label x:Name="nombreproducto1" Text="coca cola"  FontAttributes="Bold" TextColor="#876445" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                    <Image Source="coca.png" WidthRequest="80"></Image>
+                    <Label x:Name="precio1" Text="5000" FontAttributes="Bold" TextColor="#876445" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                    <Button x:Name="dineropagos1" Clicked="dineropagos_Clicked1"  Text="add" TextColor="White" FontAttributes="Bold" FontSize="12" Background="#CA965C" CornerRadius="8" ></Button>
+                </StackLayout>
+            </FlexLayout>
+            <Button x:Name="continuarpagos"  Clicked="continuarpagos_Clicked"  Text="Continuar" FontAttributes="Bold" Background="#876445" TextColor="white" FontSize="20"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

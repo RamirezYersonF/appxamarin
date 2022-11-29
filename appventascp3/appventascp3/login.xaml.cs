@@ -23,7 +23,7 @@ namespace appventascp3
             string contraseña = contraseñas.Text;
 
             WSClient client = new WSClient();
-            var result = await client.Get<Models.Usuario>("https://192.168.52.246/" +
+            var result = await client.Get<Models.Usuario>("https://192.168.105.246/" +
                 "api/Registro?usuario=" + correo + "&contraseña=" + contraseña);
             string h = string.Empty;
 

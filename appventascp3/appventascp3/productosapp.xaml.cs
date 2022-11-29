@@ -17,39 +17,40 @@ namespace appventascp3
             InitializeComponent();
         }
 
-        private async void dineropagos_Clicked(object sender, EventArgs e)
+        private async void dineropagos_Clicked1(object sender, EventArgs e)
         {
             {
-                string nombreproductos = nombreproducto.Text;
-                double precios = Int32.Parse(precio.Text);
-                string nombreproductos2 = nombreproducto.Text;
-                double precios2 = Int32.Parse(precio.Text);
+                string nombreproductos1 = nombreproducto1.Text;
+                double precios1 = Int32.Parse(precio1.Text);
+             
+                WSClient client = new WSClient();
 
-
+                var result = await client.Get<Boolean>("https://192.168.105.246/" +
+                    "api/Producto?nombreproducto=" + nombreproductos1  + "&precio=" + precios1);
+            }
+        }
+        private async void dineropagos_Clicked2(object sender, EventArgs e)
+        {
+            {
+                
+                string nombreproductos2 = nombreproducto2.Text;
+                double precios2 = Int32.Parse(precio2.Text);
 
                 WSClient client = new WSClient();
 
-                var result = await client.Get<Boolean>("https://192.168.52.246/" +
-                    "api/Producto?nombreproducto=" + nombreproductos + "&precio=" + precios);
+                var result = await client.Get<Boolean>("https://192.168.105.246/" +
+                     "api/Producto?nombreproducto=" + nombreproductos2 + "&precio=" + precios2);
 
 
-                if (result)
-                {
-                    //await Navigation.PushAsync(new login());
-                    App.Current.MainPage = new metodopago();
-                    Console.WriteLine("MainPage");
 
-                }
-
-            }
+      }
         }
 
-        private void metodopagoapp_Clicked(object sender, EventArgs e)
+        private void continuarpagos_Clicked(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new metodopago();
+            Console.WriteLine("MainPage");
         }
-
-     
     }
 }
       
